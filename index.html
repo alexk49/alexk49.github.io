@@ -1,10 +1,21 @@
+---
+# front matter tells Jekyll to process Liquid
+# this will be needed on every page
+
+# set standard layout
+layout: default
+# set dynamic title
+title: Home
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>{{ page.title }}</title>
 </head>
 <body>
+    <h1>{{ "Hello World!" | downcase }}</h1>
     <p>Actual portfolio site, coming soon...</p>
 </body>
 </html>
